@@ -1,0 +1,25 @@
+{
+  "name": "proxy-malcolm",
+  "version": "1.0.0",
+  "description": "Combines multiple components to make a fully functioning kickstarter page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skunkworks-LLC/Proxy-Malcolm.git"
+  },
+  "author": "Malcolm Jones",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Skunkworks-LLC/Proxy-Malcolm/issues"
+  },
+  "homepage": "https://github.com/Skunkworks-LLC/Proxy-Malcolm#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
