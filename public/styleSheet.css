@@ -1,0 +1,42 @@
+#bodyFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+  #introduction {
+    flex-basis: 100%;
+  }
+
+  #bodyFlex .descriptionSupport {
+    flex-basis: 100%;
+    display: flex;
+    align-content: space-around; 
+  }
+
+    #root {
+      flex-basis: 100%;
+    }
+
+    #support {
+      flex-basis: 100%;
+      border-width: 0px;
+    }
+
+#support .pledgeBoxContainer {
+  flex-basis: 100%;
+  margin: 0px, 0px, 0px, 0px;
+}
+
+.informationDiv {
+  display: flex;
+
+}
+
+.detailsNav {
+  position: sticky;
+  top: 0px;
+}
+
+.heartImg {
+  visibility: hidden;
+}
