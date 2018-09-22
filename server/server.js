@@ -1,17 +1,16 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
 
 const app = express();
 
 const publicFolder = path.join(__dirname, '../public/');
 
-
-app.use(express.json(), express.urlencoded({ extended: true }));
 app.use(express.static(publicFolder));
+app.use('/projects/:id', express.static(publicFolder));
 
-app.get(('/projects/:id'), (req, res) => {
-  res.redirect(307, `${id}`);
+app.all(('/projects/:id'), (req, res) => {
+  var projectId = req.url.slice(9);
+  res.redirect(307, `${projectId}`);
 })
 
 app.listen(2424, () => {
