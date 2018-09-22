@@ -15,6 +15,7 @@
 
     #root {
       flex-basis: 100%;
+      min-height: 800px;
     }
 
     #support {
