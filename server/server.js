@@ -6,12 +6,12 @@ const app = express();
 
 const publicFolder = path.join(__dirname, '../public/');
 
-console.log('this is the public folder', publicFolder);
+
 app.use(express.json(), express.urlencoded({ extended: true }));
 app.use(express.static(publicFolder));
 
-app.get(('  '), (req, res) => {
-  res.send('');
+app.get(('/projects/:id'), (req, res) => {
+  res.redirect(307, `${id}`);
 })
 
 app.listen(2424, () => {
